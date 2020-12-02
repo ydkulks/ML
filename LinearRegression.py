@@ -10,14 +10,16 @@ def main():
     print("\nPlotting given data (close graph to continue)")
     plot(x,y)
     choice=input("\nWant to predict the data?[y/n]:")
-    if choice == 'y':
+    while choice=='y':
         xtest = int(input("\nEnter the test data (0<20):\n"))
         if xtest < 20 and xtest > 0:
             pred(x,y,xtest)
             plot(x,y)
             print("=====END=====")
+            choice=input("\nWant to predict the data?[y/n]:")
         else:
             print("=====END=====")
+            break
 
 def plot(x,y):
     plt.plot(np.unique(x),np.poly1d(np.polyfit(x,y,1))(np.unique(x)))

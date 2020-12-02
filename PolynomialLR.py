@@ -14,14 +14,16 @@ def main():
     print("\nPlotting given data(close graph to continue)")
     plot(x,y)
     choice = input("\nWant to predict with new data?[y/n]:")
-    if choice == 'y': 
-        xtest=int(input("\nEnter test data (0<20):\n"))
+    while choice=='y':
+        xtest=float(input("\nEnter test data (0<20):\n"))
         if xtest < 20 and xtest > 0:
             ypred=pred(x,y,xtest)
             plot(x,y) 
             print("=====END=====")
-    else:
-        print("=====END=====")
+            choice = input("\nWant to predict with new data?[y/n]:")
+        else:
+            print("=====END=====")
+            break
 
 #Generates random dataset
 def data(x,y):
