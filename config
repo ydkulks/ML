@@ -7,3 +7,4 @@ xming ----->For displaying the graph
 ======Modules======
 $ pip install numpy 
 $ sudo apt-get install python3-matplotlib
+$ pip install pandas
