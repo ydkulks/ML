@@ -36,8 +36,7 @@ def data(x,y):
     return x,y;
 
 def plot(x,y):
-    plt.plot(np.unique(x),np.poly1d(np.polyfit(x,y,2))(np.unique(x)))
-    #print("Regression value:\n",np.unique(x),np.poly1d(np.polyfit(x,y,2))(np.unique(x)))
+    plt.plot(np.linspace(1,20,20),np.poly1d(np.polyfit(x,y,2))(np.linspace(1,20,20)))
     plt.plot(x,y,'o')
     plt.axis([0,20,0,20])
     plt.title("Polynomial Linear Regression")
