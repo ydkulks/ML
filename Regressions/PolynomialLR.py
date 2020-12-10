@@ -52,7 +52,7 @@ def plot(x,y,ys):
         plt.legend(loc='upper right')
     plt.xlabel("MRT station distance")#x axis labeling
     plt.ylabel("House pricing")#y axis labeling
-    plt.title("Linear Regression")#Graph labeling
+    plt.title("Polynomial Linear Regression")#Graph labeling
     plt.show()#Displaying the graph
 
 if __name__=="__main__":
