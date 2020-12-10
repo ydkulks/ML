@@ -42,5 +42,5 @@ But, unlike linear regression, it can plot the *line of best fit* for the scatte
 has a curvature as it's pattern and fit a curve to it instead of a straight line. A straight line
 for this kind of data might be an inaccurate representation. Because of this drawback, this 
     algorithm might be you're best bet for this kind of data.<br>
-![Output of LR](https://github.com/ydkulks/ML/blob/master/outputs/PLR_Graph.png?raq=true)
+![Output of LR](https://github.com/ydkulks/ML/blob/master/outputs/plr.png?raq=true)
 
