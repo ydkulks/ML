@@ -1,0 +1,26 @@
+Types of Linear regressions for ML:
+===================================
+> Simple Linear Regressions(Ordinary least squares):
+    Straight line across the data as line of best fit.
+    Formula:
+        y = mx + b
+        where, y -> prediction 
+               x -> known data
+               b -> y intercept of the line
+               m -> where slope starts
+        m = n (Σxy) - (Σx)(Σy) /n(Σx2) - (Σx)2 
+        b = (Σy)(Σx2) - (Σx)(Σxy)/ n(Σx2) - (Σx)2
+
+> Multiple Linear Regressions:
+    Formula:
+        y = b + mx + mx +...
+> Multivariate Linear Regressions 
+> Logistic Regressions 
+
+> Polynomial Linear Regressions:
+    Curved line as a line of best fit.
+    Formula: y = mx^2 + mx + b
+
+Gradient descent approach:
+=========================
+
