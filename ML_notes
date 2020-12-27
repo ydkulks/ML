@@ -4,16 +4,17 @@ Types of Linear regressions for ML:
     Straight line across the data as line of best fit.
     Formula:
         y = mx + b
-        where, y -> prediction 
-               x -> known data
+        where, y -> prediction (dependent variable) 
+               x -> known data (independent variable)
                b -> y intercept of the line
                m -> where slope starts
         m = n (Σxy) - (Σx)(Σy) /n(Σx2) - (Σx)2 
         b = (Σy)(Σx2) - (Σx)(Σxy)/ n(Σx2) - (Σx)2
 
 > Multiple Linear Regressions:
+    Same as OLS, but using two or mode independent variable(x)
     Formula:
-        y = b + mx + mx +...
+        y = b + m1x1 + m2x2 +...
 > Multivariate Linear Regressions 
 > Logistic Regressions 
 
@@ -23,4 +24,12 @@ Types of Linear regressions for ML:
 
 Gradient descent approach:
 =========================
-
+  Formula:
+    Predicted height = intercept + slope * x
+    Residual = y - Predicted height
+    Sum of squared residuals = Residual1^2 + Residual2^2 + ...
+    Sum of squared errors (SSE):
+      SSE = sum(y-(mx+b))^2
+    Derivative = sum(-2(y-(m * x + b)))
+    step size = slope * learning rate
+    New intercept = old intercept - step size

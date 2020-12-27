@@ -44,7 +44,7 @@ def model(x,y):
 def plot(x,y,ys):
     xN=int(np.max(x))
     yN=int(np.max(y))
-    mp.rc('lines',linewidth=3)
+    mp.rc('lines',linewidth=4)
     with plt.style.context('dark_background'):#Dark theme
         plt.scatter(x,y,label="Houses",c='lightgrey',alpha=0.5)#Plots x,y data into graph
         plt.plot(np.linspace(1,xN,yN),np.poly1d(np.polyfit(x,y,2))(np.linspace(1,xN,yN))

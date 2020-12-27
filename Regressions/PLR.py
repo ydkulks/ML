@@ -15,7 +15,7 @@ def main():
     plot(x,y)
     choice = input("\nWant to predict with new data?[y/n]:")
     while choice=='y':
-        xtest=float(input("\nEnter test data (0<20):\n"))
+        xtest=float(input("\nEnter test data b/w 0 & 20:\n"))
         if xtest < 20 and xtest > 0:
             ypred=pred(x,y,xtest)
             plot(x,y) 
